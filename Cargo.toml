@@ -1,0 +1,12 @@
+[package]
+name = "helloworld_libc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = { version = "*", default-features = false }
+
+[profile.release]
+opt-level = "s"
+panic = "abort"
+strip = true
