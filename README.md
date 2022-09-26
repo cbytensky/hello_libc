@@ -1,4 +1,4 @@
-# Hello world in Rust using libc in 904 bytes
+# Hello world in Rust with libc in 904 bytes ELF64
 
 Building:
 

@@ -1,0 +1,11 @@
+[build]
+target = "x86_64-unknown-linux-gnu"
+rustflags = [
+	"-C", "link-arg=-nostartfiles",
+	"-C", "link-arg=-Wl,-N,--no-pie,-T,libc.ld",
+]
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+
